@@ -11,7 +11,7 @@ GuardianAI is a business-focused security solution that bridges the gap between 
 ---
 
 ## Architecture
-![GuardianAI Architecture](Guardian-AI-Archflow.png)
+![GuardianAI Architecture](architecture-final.png)
 
 > **Note:** The system is built on a serverless, event-driven backbone in the `us-east-1` region, ensuring scalability and cost-optimization.
 

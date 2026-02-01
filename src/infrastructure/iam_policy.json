@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowBedrockInference",
+            "Effect": "Allow",
+            "Action": "bedrock:InvokeModel",
+            "Resource": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-haiku-*"
+        },
+        {
+            "Sid": "AllowSNSPublish",
+            "Effect": "Allow",
+            "Action": "sns:Publish",
+            "Resource": "*"
+        },
+        {
+            "Sid": "AllowLogging",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        }
+    ]
+}
